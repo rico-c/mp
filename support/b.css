@@ -1,0 +1,523 @@
+body{
+	margin:0px !important;
+}
+#picback{
+	width:100%;
+	height:100%;
+	position:fixed;
+}
+#picback img{
+	/*filter: blur(1px); */
+	filter: brightness(.6);
+	width:100%;
+}
+text{
+	color:white !important;
+	fill:white !important
+  }
+rect{
+	fill:white !important;
+}
+path{
+	fill:white !important;
+	stroke:white !important;
+}
+a{
+	text-decoration: none;
+}
+.alphaTabSurface svg:last-child{
+	display: none;
+}
+.beatCursor {
+	width:12px ! important;
+    background: black;
+    opacity:0.6;
+    border-radius: 2px;
+    box-shadow: 1px 0px 1px white;
+}	    
+.atHighlight * { 
+    fill: #0078ff;
+}	    
+#trackList li {
+    padding: 5px;
+}
+#trackList .btn {
+    background: none;
+    outline: none;
+}
+#trackList .solo.checked {
+    background: #426d9d;
+    color: #FFF;
+}
+#trackList .mute.checked {
+    background: #c9302c;
+    color: #FFF;
+}
+#trackList .title {
+    cursor: pointer;
+}
+#trackList .title:hover {
+    color: #426d9d;
+}
+#trackList .btn-group {
+}	    
+#trackList .slider-handle {
+    -moz-transform: scale(0.5, 0.5);
+    -webkit-transform: scale(0.5, 0.5);
+    transform: scale(0.5, 0.5);
+}
+#alphaTab{
+	width:80%;
+	margin:0 auto;
+	z-index: 1;
+}
+#leftbar{
+	width:80px;
+	height:100%;
+	/*background: linear-gradient(to right, #10b5f4, #1086ef); */
+	background-color:black;
+	position:fixed;
+	z-index:99999;
+	left:0px;
+	top:0px;
+}
+#rightbar{
+	width:80px;
+	display:flex;
+	flex-direction: column;
+	justify-content: center;
+		align-items: center;
+	height:100%;
+	position:fixed;
+	right:0px;
+	top:0px;
+	z-index:100;
+}
+.rightbarbutton{
+	width:30px;
+	height:30px;
+	margin:0 auto;
+	display:block;
+}
+.piccontainer{
+	width:50px;
+	height:50px;
+	border-radius: 25px;
+	background: black; 
+	/*background: radial-gradient( #1291f6,#871D78);*/
+	margin:0 auto;
+	text-align:center;
+	vertical-align: middle;
+	display: table-cell;
+}
+.piccontainer:hover{
+	background-color:grey ;
+}
+.rightbar-unit p{
+	color:#48414A;
+	text-align:center;
+	text-decoration: none;
+	margin:0 ! important;
+}
+.rightbar-unit{
+	margin:8px;
+}
+#leftbar-container{
+	vertical-align: middle;
+	display:flex;
+	flex-direction: column;
+	position:absolute;
+	top:50%;
+	transform: translateY(-50%);
+}
+.leftbar-unit{
+	width:80px;
+	height:60px;
+	display:flex;
+	flex-direction: column;
+	justify-content: center;
+	padding:5px 0 5px 0;
+}
+.leftbar-unit:hover{
+	background-color:grey; 
+}
+
+.leftbar-unit img{
+	width:35px;
+	height:35px;
+	margin:0 auto;
+	margin-bottom: 2px;
+}
+.leftbar-logo{
+	width:80px;
+	height:100px;
+	position:fixed;
+	top:20px;
+	left:0px;
+	text-align: center;
+}
+#logopic{
+	width:50px;
+	height:50px;
+	margin:0 auto;
+	margin-bottom: 2px;
+}
+#logomipu{
+	width:50px;
+	height:24px;
+	margin:0 auto;
+	margin-bottom: 2px;
+}
+.leftbar-unit p{
+	color:white;
+	text-align:center;
+	margin:0 ! important;
+	font-size: 16px;
+}
+.leftbar-none{
+	height:30px;
+}
+.dropdown-menu1{
+	position: absolute;
+	margin-left: -85px;
+	margin-top: -120px;
+	background-color:#48414A;
+	border-radius: 4px;
+	width:80px;
+	padding:10px 0 10px 0 !important;
+	opacity: 0.8;
+	display: none;
+	z-index:9998;
+}
+.dropdown-menu1 li{
+	text-align: center
+}
+.dropdown-menu1 li:hover{
+	background-color: black;
+}
+.dropdown-menu2{
+	position: absolute;
+	transform: translateY(-60%);
+	left:-238px;
+	background-color:#48414A;
+	border-radius: 4px;
+	color:white;
+	padding:10px !important;
+	opacity: 0.8;
+	display: none;
+	z-index:9998;
+}
+.tooltip-inner{
+	display: none;
+}
+.dropdown-menu2 .btn-group{
+	display: none;
+}
+.dropdown-menu2 li a{
+	color:white;
+	text-decoration: none;
+}
+.dropdown-menu1 li a{
+	color:white;
+	text-decoration: none;
+}
+.dropdown-menu1 li{
+	list-style-type: none;
+}
+.dropdown-menu2 li{
+	list-style-type: none;
+}
+.dropdown{
+	display: relative;
+}
+.floatarea{
+	height:100%;
+	width:100%;
+	position:fixed;
+	padding-left:80px
+	top:0px;
+	background-color:#48414A;
+	opacity:0.9;
+	z-index:9999;
+	text-align: center;
+	display: none;
+}
+#ricotext{
+	border-radius: 5px;
+	border:1px solid grey;
+	width:400px;
+	height:35px;
+	text-align: center;
+	outline:0;
+	position:relative;
+
+}
+.alphaTabSurface { 
+	margin:0px auto 20px auto;
+	z-index:1 !important;
+}
+#float-upload h4{
+	color:white;
+}
+.uploadbutton1{
+
+}
+.listarea{
+	width:100%;
+	height:100%;
+	overflow: scroll;
+	color:white;
+}
+ ::-webkit-scrollbar {display:none};
+
+#collectbutton{
+	display:block;
+	position:fixed;
+	top:5%;
+	right:5%;
+	z-index:99;
+	width:32px;
+	height:32px;
+}
+#collectbutton img{
+	width:35px;
+	height:35px;
+	display:block;
+	position:fixed;
+}
+#star{
+	position:fixed;
+	top:60px;
+	right:55px;
+	z-index:200;
+}
+#rankinglist{
+	width:20%;
+	margin:0 auto;
+	overflow: visible;
+	transform: translateX(-5%);
+}
+#searchresult{
+	width:20%;
+	margin:10px auto 0 auto;
+	transform: translateX(-5%);
+}
+.closebutton{
+	position:fixed;
+	right:25px;
+	top:10px;
+	width:25px;
+	height:25px;
+}
+.closebutton img{
+	width:25px;
+	height:25px;
+}
+.searchresult-li{
+	list-style-type:none;
+	color:white;
+	font-size: 15px;
+	text-align: center;
+	padding:5px;
+	border-bottom:0.3px solid white;
+	cursor:pointer;
+}
+.rankinglist-li{
+	color:white;
+	font-size: 15px;
+	text-align: center;
+	padding:5px;
+	border-bottom:0.3px solid white;
+	cursor:pointer;
+}
+.rankinglist-li:hover{
+	background-color: #332f33;
+}
+.searchresult-li:hover{
+	background-color: #332f33;
+}
+text{
+	font-weight: bold !important;
+}
+.cursors{
+	z-index:2 !important;
+}
+#loginform{
+	margin:200px auto 0 auto;
+	color:white;
+	font-size: 18px;
+}
+#loginform table{
+	margin:0 auto;
+	border-collapse: separate;
+	border-spacing: 10px
+}
+#loginform table tr td input{
+	outline: none;
+	height:25px;
+	width:200px;
+	border-radius: 5px;
+}
+
+.collectlist-li{
+	color:white;
+	font-size: 15px;
+	text-align: center;
+	padding:5px;
+	border-bottom:0.3px solid white;
+	cursor:pointer;
+}
+.collectlist-li:hover{
+	background-color: #332f33;
+}
+#searchlogo{
+	margin:50px;
+}
+#searchlogo img{
+	width:70px;
+	width:70px;
+}
+#searchlogo p{
+	color:white;
+	font-size: 20px;
+	margin:0px !important;
+}
+#ranklogo img{
+	width:100px;
+	height:100px;
+	margin:30px auto 0 auto;
+}
+#ranklogo h2{
+	margin:-20px auto 20px 0 !important;
+}
+#mycollectlist li{
+	color:white;
+	font-size: 15px;
+	border-bottom:solid 1px white;
+	list-style: none;
+}
+#collectlogo img{
+	width:60px;
+	height:60px;
+	margin-bottom: 10px;
+}
+#collectlogo h2{
+	color:white;
+	margin:0 !important; 
+}
+#collectlogo{
+	margin:50px auto 0 auto; 
+}
+#mycollectlist{
+	width:20%;
+	margin:30px auto 0 auto;
+	transform: translateX(-7%);
+}
+#uploadlogo img{
+	width:80px;
+	height:80px;
+	margin-top:50px;
+}
+#uploadlogo h2{
+	color:white;
+	font-size: 20px
+}
+.uploadinfotext{
+	border-radius: 5px;
+	border:1px solid grey;
+	width:200px;
+	height:30px;
+	text-align: center;
+	outline:0;
+}
+#uploadfileform{
+	color:white;
+}
+.a-upload {
+    padding: 5px 30px;
+    height: 20px;
+    line-height: 20px;
+    position: relative;
+    cursor: pointer;
+    color: grey;
+    background: #fafafa;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    overflow: hidden;
+    display: inline-block;
+    *display: inline;
+    *zoom: 1
+}
+.a-upload {
+	font-size: 12px;
+}
+.a-upload  input {
+    position: absolute;
+    font-size: 100px;
+    right: 0;
+    top: 0;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    cursor: pointer
+}
+.a-upload:hover {
+    color: black;
+    background: #eee;
+    border-color: #ccc;
+    text-decoration: none
+}
+.showFileName,.fileerrorTip{
+	margin:10px !important;
+}
+#uploadfileform h4{
+	margin:10px !important;
+}
+#uploadwronginfo{
+	height:35px;
+}
+#upload-newtab-button{
+	width:100px;
+	height:35px;
+	border-radius: 4px;
+	outline:0;
+	cursor: pointer;
+}
+#registerbutton{
+	color:#1274df;
+}
+#loginbutton{
+	margin:15px;
+	width:100px;
+	height:35px;
+	border-radius: 5px;
+	outline:0;
+	cursor: pointer;
+}
+#leftbar-login{
+	color:white;
+	text-align:center;
+}
+#regform{
+	margin:200px auto 0 auto;
+	color:white;
+	font-size: 18px;
+}
+#regform table{
+	margin:0 auto;
+	border-collapse: separate;
+	border-spacing: 10px
+}
+#regform table tr td input{
+	outline: none;
+	height:25px;
+	width:200px;
+	border-radius: 5px;
+}
+#regbutton{
+	margin:10px;
+	width:100px;
+	height:35px;
+	border-radius: 5px;
+	outline:0;
+	cursor: pointer;
+}
