@@ -1565,7 +1565,7 @@ AlphaTab.Platform.Std.Log = function (logLevel, category, msg, details){
              console.debug(msg, details);;
             break;
         case AlphaTab.Util.LogLevel.Info:
-             console.info(msg, details);;
+
             break;
         case AlphaTab.Util.LogLevel.Warning:
              console.warn(msg, details);;

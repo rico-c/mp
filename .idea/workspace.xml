@@ -2,15 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" readonly="true" id="60df1093-4194-41f7-8acd-b4e423c7f069" name="默认" comment="">
-      <change afterPath="$PROJECT_DIR$/support/bootstrape.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Build/JavaScript/alphaTab.js" beforeDir="false" afterPath="$PROJECT_DIR$/Build/JavaScript/alphaTab.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Build/JavaScript/mipu.js" beforeDir="false" afterPath="$PROJECT_DIR$/Build/JavaScript/mipu.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Build/JavaScript/tabjs.js" beforeDir="false" afterPath="$PROJECT_DIR$/Build/JavaScript/tabjs.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pics/collected.png" beforeDir="false" afterPath="$PROJECT_DIR$/pics/collected.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pics/loading.gif" beforeDir="false" afterPath="$PROJECT_DIR$/pics/loading.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/support/b.css" beforeDir="false" afterPath="$PROJECT_DIR$/support/b.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/support/cloud.css" beforeDir="false" afterPath="$PROJECT_DIR$/support/cloud.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/alphaSynth/AlphaSynth.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/alphaSynth/AlphaSynth.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -27,41 +22,10 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="383">
-              <caret line="19" column="30" lean-forward="true" selection-start-line="19" selection-start-column="30" selection-end-line="19" selection-end-column="30" />
+            <state relative-caret-position="-259">
+              <caret line="148" column="20" lean-forward="true" selection-start-line="148" selection-start-column="20" selection-end-line="148" selection-end-column="20" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#li#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="bootstrape.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/support/bootstrape.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="4956" column="1" lean-forward="true" selection-start-line="4956" selection-start-column="1" selection-end-line="4956" selection-end-column="1" />
-              <folding>
-                <element signature="e#75882#76082#2" expanded="true" />
-                <element signature="e#76316#76465#2" expanded="true" />
-                <element signature="e#77038#77184#2" expanded="true" />
-                <element signature="e#77558#77724#1" expanded="true" />
-                <element signature="e#91689#91932#2" expanded="true" />
-                <element signature="e#92968#93217#2" expanded="true" />
-                <element signature="e#126968#127158#2" expanded="true" />
-                <element signature="e#127215#127405#2" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="tabjs.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Build/JavaScript/tabjs.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1441">
-              <caret line="244" column="31" selection-start-line="244" selection-start-column="31" selection-end-line="244" selection-end-column="31" />
-              <folding>
-                <element signature="e#76#83#1" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -70,8 +34,8 @@
       <file leaf-file-name="mipu.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Build/JavaScript/mipu.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="417">
-              <caret line="83" column="11" lean-forward="true" selection-start-line="83" selection-start-column="11" selection-end-line="83" selection-end-column="11" />
+            <state relative-caret-position="366">
+              <caret line="194" column="14" selection-start-line="194" selection-start-column="14" selection-end-line="194" selection-end-column="14" />
               <folding>
                 <element signature="e#33#39#0" expanded="true" />
                 <element signature="e#40#46#0" expanded="true" />
@@ -81,34 +45,9 @@
                 <element signature="e#40#46#0" expanded="true" />
                 <element signature="e#33#39#0" expanded="true" />
                 <element signature="e#40#46#0" expanded="true" />
+                <element signature="e#33#39#0" expanded="true" />
+                <element signature="e#40#46#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="cloud.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/support/cloud.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1275">
-              <caret line="106" lean-forward="true" selection-start-line="106" selection-end-line="106" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="b.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/support/b.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="284">
-              <caret line="236" column="10" lean-forward="true" selection-start-line="236" selection-start-column="10" selection-end-line="236" selection-end-column="10" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="alphaTab.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Build/JavaScript/alphaTab.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="427">
-              <caret line="23" column="124" lean-forward="true" selection-start-line="23" selection-start-column="124" selection-end-line="23" selection-end-column="124" />
             </state>
           </provider>
         </entry>
@@ -126,8 +65,10 @@
       <find>请先登录</find>
       <find>bootoast</find>
       <find>info</find>
-      <find>alert-info</find>
       <find>pluginName</find>
+      <find>alert-info</find>
+      <find>gp</find>
+      <find />
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -140,8 +81,10 @@
         <option value="$PROJECT_DIR$/Build/JavaScript/tabjs.js" />
         <option value="$PROJECT_DIR$/support/cloud.css" />
         <option value="$PROJECT_DIR$/support/b.css" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/support/bootstrape.css" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/Build/JavaScript/alphaTab.js" />
+        <option value="$PROJECT_DIR$/lib/alphaSynth/AlphaSynth.js" />
         <option value="$PROJECT_DIR$/Build/JavaScript/mipu.js" />
       </list>
     </option>
@@ -156,9 +99,9 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="288" />
-    <option name="y" value="24" />
-    <option name="width" value="1214" />
+    <option name="x" value="403" />
+    <option name="y" value="23" />
+    <option name="width" value="1277" />
     <option name="height" value="1027" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -187,6 +130,17 @@
               <item name="html" type="462c0819:PsiDirectoryNode" />
               <item name="Build" type="462c0819:PsiDirectoryNode" />
               <item name="JavaScript" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="html" type="b2602c69:ProjectViewProjectNode" />
+              <item name="html" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="html" type="b2602c69:ProjectViewProjectNode" />
+              <item name="html" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="alphaSynth" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="html" type="b2602c69:ProjectViewProjectNode" />
@@ -239,18 +193,18 @@
       <workItem from="1533191295379" duration="23000" />
       <workItem from="1533206149267" duration="1559000" />
       <workItem from="1533211135575" duration="2276000" />
-      <workItem from="1533226473313" duration="4555000" />
+      <workItem from="1533226473313" duration="7465000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10858000" />
+    <option name="totallyTimeSpent" value="13768000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="288" y="24" width="1214" height="1027" extended-state="0" />
+    <frame x="403" y="23" width="1277" height="1027" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3047776" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17306186" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="调试" order="7" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
@@ -311,6 +265,8 @@
             <element signature="e#40#46#0" expanded="true" />
             <element signature="e#33#39#0" expanded="true" />
             <element signature="e#40#46#0" expanded="true" />
+            <element signature="e#33#39#0" expanded="true" />
+            <element signature="e#40#46#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -355,6 +311,8 @@
             <element signature="e#40#46#0" expanded="true" />
             <element signature="e#33#39#0" expanded="true" />
             <element signature="e#40#46#0" expanded="true" />
+            <element signature="e#33#39#0" expanded="true" />
+            <element signature="e#40#46#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -408,6 +366,8 @@
             <element signature="e#40#46#0" expanded="true" />
             <element signature="e#33#39#0" expanded="true" />
             <element signature="e#40#46#0" expanded="true" />
+            <element signature="e#33#39#0" expanded="true" />
+            <element signature="e#40#46#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -444,6 +404,8 @@
             <element signature="e#40#46#0" expanded="true" />
             <element signature="e#34#40#0" expanded="true" />
             <element signature="e#41#47#0" expanded="true" />
+            <element signature="e#33#39#0" expanded="true" />
+            <element signature="e#40#46#0" expanded="true" />
             <element signature="e#33#39#0" expanded="true" />
             <element signature="e#40#46#0" expanded="true" />
             <element signature="e#33#39#0" expanded="true" />
@@ -499,22 +461,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Build/JavaScript/cloud.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Build/JavaScript/alphaTab.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="427">
-          <caret line="23" column="124" lean-forward="true" selection-start-line="23" selection-start-column="124" selection-end-line="23" selection-end-column="124" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pics/logo.svg">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -540,10 +486,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="383">
-          <caret line="19" column="30" lean-forward="true" selection-start-line="19" selection-start-column="30" selection-end-line="19" selection-end-column="30" />
+        <state relative-caret-position="-259">
+          <caret line="148" column="20" lean-forward="true" selection-start-line="148" selection-start-column="20" selection-end-line="148" selection-end-column="20" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#li#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Build/JavaScript/tabjs.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1441">
+          <caret line="244" column="31" selection-start-line="244" selection-start-column="31" selection-end-line="244" selection-end-column="31" />
+          <folding>
+            <element signature="e#76#83#1" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -565,25 +521,40 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Build/JavaScript/tabjs.js">
+    <entry file="file://$PROJECT_DIR$/lib/alphaSynth/AlphaSynth.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1441">
-          <caret line="244" column="31" selection-start-line="244" selection-start-column="31" selection-end-line="244" selection-end-column="31" />
+        <state relative-caret-position="263">
+          <caret line="1276" column="16" selection-start-line="1276" selection-start-column="16" selection-end-line="1276" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Build/JavaScript/alphaTab.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="1567" selection-start-line="1567" selection-end-line="1567" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Build/JavaScript/cloud.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
           <folding>
-            <element signature="e#76#83#1" expanded="true" />
+            <element signature="n#!!doc" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Build/JavaScript/mipu.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="417">
-          <caret line="83" column="11" lean-forward="true" selection-start-line="83" selection-start-column="11" selection-end-line="83" selection-end-column="11" />
+        <state relative-caret-position="366">
+          <caret line="194" column="14" selection-start-line="194" selection-start-column="14" selection-end-line="194" selection-end-column="14" />
           <folding>
             <element signature="e#33#39#0" expanded="true" />
             <element signature="e#40#46#0" expanded="true" />
             <element signature="e#34#40#0" expanded="true" />
             <element signature="e#41#47#0" expanded="true" />
+            <element signature="e#33#39#0" expanded="true" />
+            <element signature="e#40#46#0" expanded="true" />
             <element signature="e#33#39#0" expanded="true" />
             <element signature="e#40#46#0" expanded="true" />
             <element signature="e#33#39#0" expanded="true" />

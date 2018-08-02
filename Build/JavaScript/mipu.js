@@ -4,6 +4,12 @@ var $collectstatus = false;
 var $theaction;
 var $collectsongs = new Array();
 
+function getCookie(name)
+{
+    var arr,reg=new RegExp("(^| )"+name+"=([^;]*)(;|$)");
+    return (arr=document.cookie.match(reg))?unescape(arr[2]):null;
+}
+
 $(".closebutton").click(function(){
     $(".floatarea").hide();
 });
@@ -46,7 +52,6 @@ $("#collectpic").click(function(){
             $theaction=false;
         };
         (function(){
-            // µã»÷ºóµÄº¯ÊýÖ´ÐÐÊÕ²Ø»òÈ¡ÏûµÄ¶¯×÷£¬Ò³ÃæË¢ÐÂÊ±ÐèÒªÖ´ÐÐÒ»´Î²éÑ¯
             $.ajax({
               type:"post",
               url:"php/collect.php",
@@ -81,49 +86,103 @@ $("#collectpic").click(function(){
     }
 });
 
-// ËÑË÷ajax
-
 $("#ricotext").keyup(
     function(){
-                $.ajax({ //ºóÌ¨µ÷ÓÃphpÎÄ¼þ½øÐÐ²éÑ¯
-                  type:"post",
-                  url:"php/search.php",
-                  dataType:"json",
-                  data:{search:$("#ricotext").val()},
-                  success:function(feedbackdata)
-                    {
-                        console.log(feedbackdata);
-                        $("#searchresult").find("li").remove();
-                        for(var i=0;i<feedbackdata.length;i++){
-                            $("#searchresult").append("<li class='searchresult-li' data="+feedbackdata[i].address+">"+feedbackdata[i].name+"&nbsp;-&nbsp;"+feedbackdata[i].singer+"</li>");
-                        };
-                        $(".searchresult-li").click(function(){
-                             $('#alphaTab').alphaTab('load',$(this).attr("data"));
-                             contains($(this).attr("data"));
-                             $("#playPausepic").attr("src","pics/play.svg");
-                             $("#songinfo1").html($(this));
-                             $("#songinfo").html($(this));
-                             $(".floatarea").hide();
-                             $currentaddress=$(this).attr("data");
-                             // µã»÷ºóÔö¼Óµã»÷Á¿¼¼Êõ
-                             $.ajax({ //ºóÌ¨µ÷ÓÃphpÎÄ¼þ½øÐÐ²éÑ¯
-                                  type:"post",
-                                  url:"php/count.php",
-                                  dataType:"json",
-                                  data:{address:$(this).attr("data")},
-                                  success:function(feedbackdata){}
-                             });
-                        });
-                    },
-                  error:function(feedbackdata)
-                    {
-                      $("#searchresult").find("li").remove();
-                    },
-                })
+        $.ajax({
+          type:"post",
+          url:"php/search.php",
+          dataType:"json",
+          data:{search:$("#ricotext").val()},
+          success:function(feedbackdata)
+            {
+                console.log(feedbackdata);
+                $("#searchresult").find("li").remove();
+                for(var i=0;i<feedbackdata.length;i++){
+                    $("#searchresult").append("<li class='searchresult-li' data="+feedbackdata[i].address+">"+feedbackdata[i].name+"&nbsp;-&nbsp;"+feedbackdata[i].singer+"</li>");
+                };
+                //处理搜索页面结果的点击
+                $(".searchresult-li").click(function(){
+                     $('#alphaTab').alphaTab('load',$(this).attr("data"));
+                     contains($(this).attr("data"));
+                     $("#playPausepic").attr("src","pics/play.svg");
+                     $("#songinfo1").html($(this));
+                     $("#songinfo").html($(this));
+                     $(".floatarea").hide();
+                     $currentaddress=$(this).attr("data");
+                     $.ajax({
+                          type:"post",
+                          url:"php/count.php",
+                          dataType:"json",
+                          data:{address:$(this).attr("data")},
+                          success:function(feedbackdata){}
+                     });
+                });
+            },
+          error:function(feedbackdata)
+            {
+              $("#searchresult").find("li").remove();
+            },
+        })
 });
-// ÈÈ°ñajax
 $(document).ready(function(){
-    $.ajax({ //ºóÌ¨µ÷ÓÃphpÎÄ¼þ½øÐÐ²éÑ¯
+    //获取登录状态
+    if(getCookie('username')&&getCookie('password')){
+        var user = getCookie('username');
+        var psw = getCookie('password');
+            $.ajax({
+                type:"post",
+                url:"php/login.php",
+                dataType:"text",
+                data:{username:user,password:psw},
+                success:function(feedbackdata)
+                {
+                    if(feedbackdata==="success"){
+                        // $("#loginstatus").html("登录成功");
+                        document.cookie="username="+user+";max-age=7200";
+                        document.cookie="password="+psw+";max-age=7200";
+                        $("#loginstatus").attr("data","loged");
+                        $("#leftbar-login").html(user);
+                        $currentusername = user;
+                        setTimeout("$('.floatarea').hide()",200);
+                    }else{
+                        // $("#loginstatus").html("登录失败")
+                    };
+                    $.ajax({
+                        type:"post",
+                        url:"php/collectinfo.php",
+                        dataType:"json",
+                        data:{username:$currentusername},
+                        success:function(feedback)
+                        {
+                            $collectsongs = feedback;
+                            console.log(feedback);
+                            $("#mycollectlist").find("li").remove();
+                            for(var j=0;j<feedback.length;j++){
+                                $("#mycollectlist").append("<li class='collectlist-li' data="+feedback[j].address+">"+feedback[j].name+"&nbsp;-&nbsp;"+feedback[j].singer+"</li>");
+                            };
+                            $(".collectlist-li").click(function(){
+                                $('#alphaTab').alphaTab('load',$(this).attr("data"));
+                                contains($(this).attr("data"));
+                                $("#playPausepic").attr("src")=="pics/play.svg";
+                                $currentaddress=$(this).attr("data");
+                                $(".floatarea").hide();
+                                $.ajax({
+                                    type:"post",
+                                    url:"php/count.php",
+                                    dataType:"json",
+                                    data:{address:$(this).attr("data")},
+                                    success:function(feedbackdata)
+                                    {}
+                                });
+                            });
+                        }
+                    });
+                }
+            });
+    }
+
+    //获取排名
+    $.ajax({
       type:"post",
       url:"php/ranking.php",
       data:{},
@@ -134,16 +193,13 @@ $(document).ready(function(){
             for(var i=0;i<feedbackdata.length;i++){
                 $("#rankinglist").append("<li class='rankinglist-li' data="+feedbackdata[i].address+">"+feedbackdata[i].name+"&nbsp;-&nbsp;"+feedbackdata[i].singer+"</li>");
             };
-            // $('#alphaTab').alphaTab('load',feedbackdata[0].address);
             $(".rankinglist-li").click(function(){
-                console.log("liclicked");
                  $('#alphaTab').alphaTab('load',$(this).attr("data"));
                  $("#playPausepic").attr("src","pics/play.svg");
                  contains($(this).attr("data"));
                  $(".floatarea").hide();
                  $currentaddress=$(this).attr("data");
-                 // µã»÷ºóÔö¼Óµã»÷Á¿¼¼Êõ
-                 $.ajax({ //ºóÌ¨µ÷ÓÃphpÎÄ¼þ½øÐÐ²éÑ¯
+                 $.ajax({
                       type:"post",
                       url:"php/count.php",
                       dataType:"json",
@@ -182,10 +238,9 @@ $("#upload-newtab-button").click(function(){
     }
 });
 
-// µÇÂ¼ajax
 $(function(){
-    $("#loginbutton").click(function(){ //
-        $.ajax({ //ºóÌ¨µ÷ÓÃphpÎÄ¼þ½øÐÐ²éÑ¯
+    $("#loginbutton").click(function(){
+        $.ajax({
           type:"post",
           url:"php/login.php",
           dataType:"text",
@@ -200,6 +255,8 @@ $(function(){
                       position:'top-center',
                       timeout:1
                   });
+                document.cookie="username="+$("#usernameinput").val()+";max-age=7200";
+                document.cookie="password="+$("#passwordinput").val()+";max-age=7200";
                 $("#loginstatus").attr("data","loged");
                 $("#leftbar-login").html($("#usernameinput").val());
                 $currentusername = $("#usernameinput").val();
@@ -213,7 +270,6 @@ $(function(){
                       timeout:1
                   });
               };
-              // µÇÂ½ºó»ñÈ¡¸ÃÓÃ»§µÄÊÕ²ØÁÐ±í
               $.ajax({
                   type:"post",
                   url:"php/collectinfo.php",
@@ -234,8 +290,7 @@ $(function(){
                          $("#playPausepic").attr("src")=="pics/play.svg";
                          $currentaddress=$(this).attr("data");
                          $(".floatarea").hide();
-                         // µã»÷ºóÔö¼Óµã»÷Á¿¼¼Êõ
-                         $.ajax({ //ºóÌ¨µ÷ÓÃphpÎÄ¼þ½øÐÐ²éÑ¯
+                         $.ajax({
                               type:"post",
                               url:"php/count.php",
                               dataType:"json",
@@ -250,7 +305,6 @@ $(function(){
         });
     })
  });
-// ×¢²áajax
 $(function(){
     $("#regbutton").click(function(){
         if($("#passwordreg").val()===$("#passwordreg2").val()){
@@ -290,8 +344,7 @@ $(function(){
 $("#stopbutton").click(function(){
     $("#playPausepic").attr("src","pics/play.svg");
 });
-// ÀÖÆ÷¼°ËÙ¶È°´Å¥
- $(".dropdown-toggle1").on("click", function(){
+$(".dropdown-toggle1").on("click", function(){
     $(".dropdown-menu1").fadeToggle(50);
     $(".dropdown-menu2").fadeOut(50);
 });
@@ -305,7 +358,6 @@ $(".dropdown-menu1").find('li').click(
         $(".dropdown-menu1").fadeOut(50);
     }
     );
-// ×ó²àÀ¸°´Å¥µ¯³ö
 $("#leftbar-search").click(function(){
     if($("#float-search").css("display")=='none'){
         $(".floatarea").fadeOut(50);
@@ -352,7 +404,6 @@ $("#registerbutton").click(function(){
   $("#float-register").show();
   });
 
-// ²¥·Å°´Å¥
 $("#playPause").click(function(){
     if($("#playPausepic").attr("src")=="pics/play.svg")
     {
