@@ -10,6 +10,7 @@ body{
 	/*filter: blur(1px); */
 	filter: brightness(.6);
 	width:100%;
+    height: 100%;
 }
 text{
 	color:white !important;
@@ -496,6 +497,7 @@ text{
 #leftbar-login{
 	color:white;
 	text-align:center;
+    word-wrap: break-word;
 }
 #regform{
 	margin:200px auto 0 auto;
