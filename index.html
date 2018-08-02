@@ -15,6 +15,16 @@
     <script type="text/javascript" src="Build/JavaScript/cloud.js"></script>  
     <link rel="stylesheet" href="support/b.css" />
     <link rel="stylesheet" href="support/cloud.css" />
+    <link rel="stylesheet" href="support/bootstrape.css" >
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?b8bd631a37e0e3cf6fb21ff2a0fda8ef";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
 </head>
 <body>
 	<div id="picback"><img src="pics/2.jpg"></div>
@@ -29,9 +39,17 @@
 		</div>
 	</div>
 	<div id="rightbar">
+            <div id="soundFontProgressMenuItem">
+                <p class="navbar-text">加载音色库</p>
+                <div class="progress">
+                    <div class="progress-bar" id="soundFontProgress" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 0%;">
+                        0%
+                    </div>
+                </div>
+            </div>
 			<a href="##"><div class="rightbar-unit">
 				<div class="piccontainer" id="playPause" class="btn btn-link navbar-btn glyphicon glyphicon-play">
-				<img src="pics/play.svg"  id="playPausepic" disabled="disabled" class="rightbarbutton">
+				<img src="pics/loading.gif"  id="playPausepic" disabled="disabled" class="rightbarbutton">
 				</div>
 			</div></a>
 			<a href="##"><div class="rightbar-unit">
@@ -101,7 +119,7 @@
 			<input type="text" name="name" id="uploadname" class="uploadinfotext" placeholder="请输入曲名">
 			<span> - </span>
 			<input type="text" name="singer" id="uploadsinger" class="uploadinfotext" placeholder="请输入歌手">
-			<h4>请选择.gp4/.gp5文件：</h4>
+			<p>请选择.gp4/.gp5文件：</p>
 			<a href="##" class="a-upload">
 				<span>选择乐谱</span>
 				<input type="file" name="file" class="uploadbutton1" id="uploadfile">
@@ -166,11 +184,13 @@
     </div>
     <div id="alphaTab" data-file="uploads/youngforyou.gp5" 
                        data-player="lib/alphaSynth/default.sf2"
-                       data-player-offset="[-10,-70]" data-staves="tab" data-staves-rhythm="true" data-layout-hide-tuning="true" >   
-        <div class="bottominfo" style="position: absolute;bottom:10px;left:50%;transform: translateX(-50%);"><a href="http://www.miitbeian.gov.cn/" style="color:white;">@2018 Mipu 京ICP备18027318号</a></div>           
+                       data-player-offset="[-10,-70]" data-staves="tab" data-staves-rhythm="true" data-layout-hide-tuning="true">
+        <div class="bottominfo" style="position: absolute;bottom:10px;left:50%;transform: translateX(-50%);"><a href="http://www.miitbeian.gov.cn/" style="color:white;">©2018 Mipu 京ICP备18027318号</a></div>
     </div>
     <a href="##" id="star"><div id="collectbutton"><img src="pics/collect.png" id="collectpic"></div></a>
     <script type="text/javascript" src="Build/JavaScript/mipu.js"></script>  
-    <script type="text/javascript" src="Build/JavaScript/tabjs.js"></script>   
+    <script type="text/javascript" src="Build/JavaScript/tabjs.js"></script>
+
+    <script src="https://cdn.bootcss.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
 </body>
 </html>     

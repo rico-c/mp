@@ -1,6 +1,12 @@
 body{
 	margin:0px !important;
 }
+div,input,button,p{
+    box-sizing: content-box !important;
+}
+*,*::before, *::after {
+    box-sizing: content-box !important;
+}
 #picback{
 	width:100%;
 	height:100%;
@@ -239,7 +245,7 @@ a{
 	top:0px;
 	background-color:#48414A;
 	opacity:0.9;
-	z-index:9999;
+	z-index:2000;
 	text-align: center;
 	display: none;
 }
@@ -251,7 +257,7 @@ a{
 	text-align: center;
 	outline:0;
 	position:relative;
-
+    display:inline-block;
 }
 .alphaTabSurface { 
 	margin:0px auto 20px auto;
@@ -522,4 +528,13 @@ text{
 	border-radius: 5px;
 	outline:0;
 	cursor: pointer;
+}
+.navbar-text{
+    color:#fff;
+    padding:0 !important;
+    margin:0 !important;
+    font-size:12px;
+}
+.progress-bar{
+    background-color: #6c757d !important;
 }
