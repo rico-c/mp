@@ -171,7 +171,8 @@
                 else {
                     $(this).find('.showHide').removeClass('glyphicon-eye-open').addClass('glyphicon-eye-close');
                 }
-            });       
+            });
+            $(".bottominfo").show();
         });
 
         /**

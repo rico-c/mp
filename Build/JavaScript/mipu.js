@@ -16,7 +16,7 @@ $(".closebutton").click(function(){
 
 $(".a-upload").on("change","input[type='file']",function(){
     var filePath=$(this).val();
-    if(filePath.indexOf("gp4")!=-1 || filePath.indexOf("gp5")!=-1){
+    if(filePath.indexOf("gp4")!=-1 || filePath.indexOf("gp5")!=-1 || filePath.indexOf("gp3")!=-1){
         $(".fileerrorTip").html("").hide();
         var arr=filePath.split('\\');
         var fileName=arr[arr.length-1];
@@ -71,7 +71,7 @@ $("#collectpic").click(function(){
                     console.log(feedback);
                     $("#mycollectlist").find("li").remove();
                     for(var j=0;j<feedback.length;j++){
-                        $("#mycollectlist").append("<li class='collectlist-li' data="+feedback[j].address+">"+feedback[j].name+"&nbsp;-&nbsp;"+feedback[j].singer+"</li>");
+                        $("#mycollectlist").append("<li class='collectlist-li' data='"+feedback[j].address+"'>"+feedback[j].name+"&nbsp;-&nbsp;"+feedback[j].singer+"</li>");
                     };
                   }
               });
@@ -98,7 +98,7 @@ $("#ricotext").keyup(
                 console.log(feedbackdata);
                 $("#searchresult").find("li").remove();
                 for(var i=0;i<feedbackdata.length;i++){
-                    $("#searchresult").append("<li class='searchresult-li' data="+feedbackdata[i].address+">"+feedbackdata[i].name+"&nbsp;-&nbsp;"+feedbackdata[i].singer+"</li>");
+                    $("#searchresult").append("<li class='searchresult-li' data='"+ feedbackdata[i].address + "'>"+feedbackdata[i].name+"&nbsp;-&nbsp;"+feedbackdata[i].singer+"</li>");
                 };
                 //处理搜索页面结果的点击
                 $(".searchresult-li").click(function(){
@@ -158,7 +158,7 @@ $(document).ready(function(){
                             console.log(feedback);
                             $("#mycollectlist").find("li").remove();
                             for(var j=0;j<feedback.length;j++){
-                                $("#mycollectlist").append("<li class='collectlist-li' data="+feedback[j].address+">"+feedback[j].name+"&nbsp;-&nbsp;"+feedback[j].singer+"</li>");
+                                $("#mycollectlist").append("<li class='collectlist-li' data='"+feedback[j].address+"'>"+feedback[j].name+"&nbsp;-&nbsp;"+feedback[j].singer+"</li>");
                             };
                             $(".collectlist-li").click(function(){
                                 $('#alphaTab').alphaTab('load',$(this).attr("data"));
@@ -191,7 +191,9 @@ $(document).ready(function(){
             console.log(feedbackdata);
             $("#rankinglist").find("li").remove();
             for(var i=0;i<feedbackdata.length;i++){
-                $("#rankinglist").append("<li class='rankinglist-li' data="+feedbackdata[i].address+">"+feedbackdata[i].name+"&nbsp;-&nbsp;"+feedbackdata[i].singer+"</li>");
+                let address = feedbackdata[i].address;
+                console.log(address);
+                $("#rankinglist").append("<li class='rankinglist-li' data='"+address+"'>"+feedbackdata[i].name + "&nbsp;-&nbsp;"+feedbackdata[i].singer+"</li>");
             };
             $(".rankinglist-li").click(function(){
                  $('#alphaTab').alphaTab('load',$(this).attr("data"));
@@ -211,7 +213,7 @@ $(document).ready(function(){
       }
     });
 });
-// ÉÏ´«ajax
+
 $("#upload-newtab-button").click(function(){
     if(($("#uploadname").val())&&($("#uploadsinger").val())&&($("#uploadfile").val())){
         var data = new FormData();
@@ -230,7 +232,13 @@ $("#upload-newtab-button").click(function(){
             processData: false,
             contentType: false,
             success: function(feedbackdata){
-                $("#uploadresulutinfo").html(feedbackdata);
+                bootoast({
+                    message:'上传成功',
+                    type: 'info',
+                    position:'top-center',
+                    timeout:1
+                });
+                // $("#uploadresulutinfo").html(feedbackdata);
             }
         })
     }else{
@@ -281,7 +289,7 @@ $(function(){
                     console.log(feedback);
                     $("#mycollectlist").find("li").remove();
                     for(var j=0;j<feedback.length;j++){
-                        $("#mycollectlist").append("<li class='collectlist-li' data="+feedback[j].address+">"+feedback[j].name+"&nbsp;-&nbsp;"+feedback[j].singer+"</li>");
+                        $("#mycollectlist").append("<li class='collectlist-li' data='"+feedback[j].address+"'>"+feedback[j].name+"&nbsp;-&nbsp;"+feedback[j].singer+"</li>");
                     };
                     $(".collectlist-li").click(function(){
                         console.log("liclicked");

@@ -77,6 +77,7 @@ a{
 	width:80%;
 	margin:0 auto;
 	z-index: 1;
+    padding-bottom: 50px;
 }
 #leftbar{
 	width:80px;
@@ -537,4 +538,13 @@ text{
 }
 .progress-bar{
     background-color: #6c757d !important;
+}
+.bottominfo span{
+    margin-bottom: 0px;
+    color:#ffffff;
+}
+.bottominfo{
+    text-align: center;
+    font-size:12px;
+    display:none;
 }
