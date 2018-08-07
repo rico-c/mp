@@ -242,7 +242,13 @@ $("#upload-newtab-button").click(function(){
             }
         })
     }else{
-        $("#uploadresulutinfo").html('请填写完整信息并上传指定格式的乐谱')
+        bootoast({
+            message:'请填写完整信息并上传指定格式的乐谱',
+            type: 'danger',
+            position:'top-center',
+            timeout:1
+        });
+        // $("#uploadresulutinfo").html('请填写完整信息并上传指定格式的乐谱')
     }
 });
 
@@ -315,35 +321,44 @@ $(function(){
  });
 $(function(){
     $("#regbutton").click(function(){
-        if($("#passwordreg").val()===$("#passwordreg2").val()){
-            if($("#passwordreg").val().length>=6){
-                $.ajax({
-                      type:"post",
-                      url:"php/register.php",
-                      dataType:"text",
-                      data:{username:$("#usernamereg").val(),password:$("#passwordreg").val()},
-                      success:function(feedbackdata){
-                        $("#registerstatus").html(feedbackdata);
-                        console.log(feedbackdata);
+        if($("#usernamereg").val().length >= 1) {
+            if ($("#passwordreg").val() === $("#passwordreg2").val()) {
+                if ($("#passwordreg").val().length >= 6) {
+                    $.ajax({
+                        type: "post",
+                        url: "php/register.php",
+                        dataType: "text",
+                        data: {username: $("#usernamereg").val(), password: $("#passwordreg").val()},
+                        success: function (feedbackdata) {
+                            $("#registerstatus").html(feedbackdata);
+                            console.log(feedbackdata);
                         },
-                })
-            }else{
-                // $("#registerstatus").html("错误：密码长度必须大于6位");
+                    })
+                } else {
+                    // $("#registerstatus").html("错误：密码长度必须大于6位");
+                    bootoast({
+                        message: '错误：密码长度必须大于6位',
+                        type: 'danger',
+                        position: 'top-center',
+                        timeout: 1
+                    });
+                }
+            }
+            else {
+                // $("#registerstatus").html("错误：两次密码不一致");
                 bootoast({
-                    message: '错误：密码长度必须大于6位',
+                    message: '错误：两次密码不一致',
                     type: 'danger',
-                    position:'top-center',
-                    timeout:1
+                    position: 'top-center',
+                    timeout: 1
                 });
             }
-        }
-        else{
-            // $("#registerstatus").html("错误：两次密码不一致");
+        }else{
             bootoast({
-                message: '错误：两次密码不一致',
+                message: '错误：请输入用户名',
                 type: 'danger',
-                position:'top-center',
-                timeout:1
+                position: 'top-center',
+                timeout: 1
             });
         }
     })
