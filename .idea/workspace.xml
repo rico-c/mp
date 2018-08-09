@@ -19,8 +19,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="675">
-              <caret line="192" column="35" selection-start-line="192" selection-start-column="35" selection-end-line="192" selection-end-column="35" />
+            <state relative-caret-position="694">
+              <caret line="193" column="17" lean-forward="true" selection-start-line="193" selection-start-column="17" selection-end-line="193" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -191,12 +191,12 @@
       <workItem from="1533528357295" duration="148000" />
       <workItem from="1533647621347" duration="307000" />
       <workItem from="1533693380463" duration="71000" />
-      <workItem from="1533835258481" duration="8000" />
+      <workItem from="1533835258481" duration="94000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22089000" />
+    <option name="totallyTimeSpent" value="22175000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="288" y="23" width="1392" height="1027" extended-state="0" />
@@ -206,6 +206,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="File Transfer" order="7" visible="true" weight="0.09552239" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="7" />
@@ -219,7 +220,6 @@
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="File Transfer" order="7" visible="true" weight="0.09552239" />
       <window_info anchor="bottom" id="Find" order="1" />
     </layout>
   </component>
@@ -434,6 +434,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="142">
           <caret line="1" column="934" selection-start-line="1" selection-start-column="934" selection-end-line="1" selection-end-column="934" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -475,7 +478,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Build/JavaScript/cloud.js">
-      <provider selected="true" editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/support/b.css">
       <provider selected="true" editor-type-id="text-editor">
@@ -504,8 +513,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="675">
-          <caret line="192" column="35" selection-start-line="192" selection-start-column="35" selection-end-line="192" selection-end-column="35" />
+        <state relative-caret-position="694">
+          <caret line="193" column="17" lean-forward="true" selection-start-line="193" selection-start-column="17" selection-end-line="193" selection-end-column="17" />
         </state>
       </provider>
     </entry>
