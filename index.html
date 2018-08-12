@@ -126,7 +126,6 @@
 				<span>选择乐谱</span>
 				<input type="file" name="file" class="uploadbutton1" id="uploadfile">
 				<br/>
-				
 			</a>
 			<div id="uploadwronginfo">
 				<p class="showFileName"></p>
@@ -135,6 +134,23 @@
 			<input type="button" name="提交" value="提交" id="upload-newtab-button"/>
 			<p id="uploadresulutinfo"></p>
 		</form>
+        <p class="multiple_toggle">批量上传</p>
+        <!--批量上传-->
+        <form name="uploadfile" id="multiple_uploadfileform">
+            <p><b>批量上传</b></p>
+            <p>请选择.gp4/.gp5文件：</p>
+            <a href="##" class="multiple_a-upload">
+                <span>选择乐谱</span>
+                <input type="file" name="file" multiple class="multiple_uploadbutton1" id="multiple_uploadfile">
+                <br/>
+            </a>
+            <div id="uploadwronginfo">
+                <p class="multiple_showFileName"></p>
+                <p class="multiple_fileerrorTip"></p>
+            </div>
+            <input type="button" name="提交" value="提交" id="multiple_upload-newtab-button"/>
+        </form>
+        <p class="single_toggle">单谱上传</p>
 		<a href="##"><div class="closebutton"><img src="pics/close.svg"></div></a>
     </div>
     <div id="float-login" class="floatarea">

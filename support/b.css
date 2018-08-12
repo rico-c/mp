@@ -190,7 +190,7 @@ a{
 	margin-left: -85px;
 	margin-top: -120px;
 	background-color:#48414A;
-	border-radius: 4px;
+	border-radius: 3px;
 	width:80px;
 	padding:10px 0 10px 0 !important;
 	opacity: 0.8;
@@ -208,7 +208,7 @@ a{
 	transform: translateY(-60%);
 	left:-238px;
 	background-color:#48414A;
-	border-radius: 4px;
+	border-radius: 3px;
 	color:white;
 	padding:10px !important;
 	opacity: 0.8;
@@ -251,7 +251,7 @@ a{
 	display: none;
 }
 #ricotext{
-	border-radius: 5px;
+	border-radius: 3px;
 	border:1px solid grey;
 	width:400px;
 	height:35px;
@@ -364,7 +364,7 @@ text{
 	outline: none;
 	height:25px;
 	width:200px;
-	border-radius: 5px;
+	border-radius: 3px;
 }
 
 .collectlist-li{
@@ -431,7 +431,7 @@ text{
 	font-size: 20px
 }
 .uploadinfotext{
-	border-radius: 5px;
+	border-radius: 3px;
 	border:1px solid grey;
 	width:200px;
 	height:30px;
@@ -440,6 +440,7 @@ text{
 }
 #uploadfileform{
 	color:white;
+    margin-top:30px;
 }
 .a-upload {
     padding: 5px 30px;
@@ -450,7 +451,7 @@ text{
     color: grey;
     background: #fafafa;
     border: 1px solid #ddd;
-    border-radius: 4px;
+    border-radius: 3px;
     overflow: hidden;
     display: inline-block;
     *display: inline;
@@ -486,7 +487,7 @@ text{
 #upload-newtab-button{
 	width:100px;
 	height:35px;
-	border-radius: 4px;
+	border-radius: 3px;
 	outline:0;
 	cursor: pointer;
 }
@@ -497,7 +498,7 @@ text{
 	margin:15px;
 	width:100px;
 	height:35px;
-	border-radius: 5px;
+	border-radius: 3px;
 	outline:0;
 	cursor: pointer;
 }
@@ -520,7 +521,7 @@ text{
 	outline: none;
 	height:25px;
 	width:200px;
-	border-radius: 5px;
+	border-radius: 3px;
 }
 #regbutton{
 	margin:10px;
@@ -547,4 +548,80 @@ text{
     text-align: center;
     font-size:12px;
     display:none;
+}
+.multiple_toggle:hover{
+    margin-top:50px;
+    text-decoration: none;
+    out-line: none;
+    color:white;
+    cursor:pointer;
+}
+.multiple_toggle{
+    margin-top:50px;
+    text-decoration: none;
+    out-line: none;
+    color:grey;
+    cursor:pointer;
+}
+
+#multiple_uploadfileform{
+    display:none;
+}
+.single_toggle{
+    display:none;
+    margin-top:50px;
+    text-decoration: none;
+    out-line: none;
+    color:grey;
+    cursor:pointer;
+}
+.single_toggle:hover{
+    margin-top:50px;
+    text-decoration: none;
+    out-line: none;
+    color:white;
+    cursor:pointer;
+}
+
+#multiple_uploadfileform {
+    color: white;
+    margin-top: 30px;
+}
+.multiple_a-upload {
+    padding: 5px 30px;
+    height: 20px;
+    line-height: 20px;
+    position: relative;
+    cursor: pointer;
+    color: grey;
+    background: #fafafa;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    overflow: hidden;
+    display: inline-block;
+    font-size:12px;
+}
+.multiple_a-upload input {
+    position: absolute;
+    font-size: 100px;
+    right: 0;
+    top: 0;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    cursor: pointer;
+}
+
+.multiple_a-upload:hover {
+    color: black;
+    background: #eee;
+    border-color: #ccc;
+    text-decoration: none
+}
+
+#multiple_upload-newtab-button {
+    width: 100px;
+    height: 35px;
+    border-radius: 3px;
+    outline: 0;
+    cursor: pointer;
 }

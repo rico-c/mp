@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" readonly="true" id="60df1093-4194-41f7-8acd-b4e423c7f069" name="默认" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Build/JavaScript/mipu.js" beforeDir="false" afterPath="$PROJECT_DIR$/Build/JavaScript/mipu.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/support/b.css" beforeDir="false" afterPath="$PROJECT_DIR$/support/b.css" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -20,22 +22,17 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="654">
-              <caret line="194" column="24" lean-forward="true" selection-start-line="194" selection-start-column="24" selection-end-line="194" selection-end-column="24" />
+            <state relative-caret-position="717">
+              <caret line="156" column="28" lean-forward="true" selection-start-line="156" selection-start-column="28" selection-end-line="156" selection-end-column="28" />
             </state>
           </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="favicon.ico" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/favicon.ico">
-          <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
       <file leaf-file-name="b.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/support/b.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="10355">
-              <caret line="545" column="11" selection-start-line="545" selection-start-column="1" selection-end-line="545" selection-end-column="11" />
+            <state relative-caret-position="515">
+              <caret line="601" column="19" selection-start-line="601" selection-start-column="19" selection-end-line="601" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -43,17 +40,20 @@
       <file leaf-file-name="mipu.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Build/JavaScript/mipu.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4807">
-              <caret line="253" selection-start-line="253" selection-end-line="253" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="tabjs.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Build/JavaScript/tabjs.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3021">
-              <caret line="159" column="43" selection-start-line="159" selection-start-column="43" selection-end-line="159" selection-end-column="43" />
+            <state relative-caret-position="416">
+              <caret line="495" column="33" lean-forward="true" selection-start-line="495" selection-start-column="33" selection-end-line="495" selection-end-column="33" />
+              <folding>
+                <element signature="e#35#41#0" expanded="true" />
+                <element signature="e#42#48#0" expanded="true" />
+                <element signature="e#36#42#0" expanded="true" />
+                <element signature="e#43#49#0" expanded="true" />
+                <element signature="e#35#41#0" expanded="true" />
+                <element signature="e#42#48#0" expanded="true" />
+                <element signature="e#35#41#0" expanded="true" />
+                <element signature="e#42#48#0" expanded="true" />
+                <element signature="e#35#41#0" expanded="true" />
+                <element signature="e#42#48#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -76,6 +76,11 @@
       <find>gp</find>
       <find />
       <find>address</find>
+      <find>radius</find>
+      <find>console.log</find>
+      <find>uploadfileform</find>
+      <find>.a-upload</find>
+      <find>showFileName</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -90,8 +95,8 @@
         <option value="$PROJECT_DIR$/Build/JavaScript/alphaTab.js" />
         <option value="$PROJECT_DIR$/lib/alphaSynth/AlphaSynth.js" />
         <option value="$PROJECT_DIR$/support/index.html" />
-        <option value="$PROJECT_DIR$/support/b.css" />
         <option value="$PROJECT_DIR$/Build/JavaScript/tabjs.js" />
+        <option value="$PROJECT_DIR$/support/b.css" />
         <option value="$PROJECT_DIR$/Build/JavaScript/mipu.js" />
         <option value="$PROJECT_DIR$/index.html" />
       </list>
@@ -106,20 +111,20 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="288" />
-    <option name="y" value="23" />
-    <option name="width" value="1392" />
-    <option name="height" value="1027" />
+  <component name="ProjectFrameBounds" fullScreen="true">
+    <option name="width" value="1680" />
+    <option name="height" value="1050" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="添加" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
+      <autoscrollFromSource ProjectPane="true" />
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -147,7 +152,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -195,34 +199,35 @@
       <workItem from="1533835258481" duration="179000" />
       <workItem from="1533865712602" duration="1000" />
       <workItem from="1534042566674" duration="29000" />
+      <workItem from="1534075892971" duration="8866000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22290000" />
+    <option name="totallyTimeSpent" value="31156000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="288" y="23" width="1392" height="1027" extended-state="0" />
+    <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23275863" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.10178571" />
       <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="调试" order="11" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="File Transfer" order="7" visible="true" weight="0.09552239" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
+      <window_info anchor="bottom" id="File Transfer" order="12" weight="0.06285714" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Run" order="2" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="10" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="调试" order="7" />
       <window_info anchor="bottom" id="Find" order="1" />
     </layout>
   </component>
@@ -416,9 +421,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webscan_360_cn.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/Build/JavaScript/jquery.alphaTab.alphaSynth.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="199">
@@ -480,16 +482,12 @@
     <entry file="file://$PROJECT_DIR$/Build/JavaScript/cloud.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/support/b.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="10355">
-          <caret line="545" column="11" selection-start-line="545" selection-start-column="1" selection-end-line="545" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/support/index.html" />
     <entry file="file://$PROJECT_DIR$/favicon.ico">
       <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webscan_360_cn.html">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/Build/JavaScript/tabjs.js">
       <provider selected="true" editor-type-id="text-editor">
@@ -498,17 +496,36 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/support/b.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="515">
+          <caret line="601" column="19" selection-start-line="601" selection-start-column="19" selection-end-line="601" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Build/JavaScript/mipu.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4807">
-          <caret line="253" selection-start-line="253" selection-end-line="253" />
+        <state relative-caret-position="416">
+          <caret line="495" column="33" lean-forward="true" selection-start-line="495" selection-start-column="33" selection-end-line="495" selection-end-column="33" />
+          <folding>
+            <element signature="e#35#41#0" expanded="true" />
+            <element signature="e#42#48#0" expanded="true" />
+            <element signature="e#36#42#0" expanded="true" />
+            <element signature="e#43#49#0" expanded="true" />
+            <element signature="e#35#41#0" expanded="true" />
+            <element signature="e#42#48#0" expanded="true" />
+            <element signature="e#35#41#0" expanded="true" />
+            <element signature="e#42#48#0" expanded="true" />
+            <element signature="e#35#41#0" expanded="true" />
+            <element signature="e#42#48#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="654">
-          <caret line="194" column="24" lean-forward="true" selection-start-line="194" selection-start-column="24" selection-end-line="194" selection-end-column="24" />
+        <state relative-caret-position="717">
+          <caret line="156" column="28" lean-forward="true" selection-start-line="156" selection-start-column="28" selection-end-line="156" selection-end-column="28" />
         </state>
       </provider>
     </entry>

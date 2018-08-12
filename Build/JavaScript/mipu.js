@@ -68,7 +68,6 @@ $("#collectpic").click(function(){
                   success:function(feedback)
                   {
                     $collectsongs = feedback;
-                    console.log(feedback);
                     $("#mycollectlist").find("li").remove();
                     for(var j=0;j<feedback.length;j++){
                         $("#mycollectlist").append("<li class='collectlist-li' data='"+feedback[j].address+"'>"+feedback[j].name+"&nbsp;-&nbsp;"+feedback[j].singer+"</li>");
@@ -95,7 +94,6 @@ $("#ricotext").keyup(
           data:{search:$("#ricotext").val()},
           success:function(feedbackdata)
             {
-                console.log(feedbackdata);
                 $("#searchresult").find("li").remove();
                 for(var i=0;i<feedbackdata.length;i++){
                     $("#searchresult").append("<li class='searchresult-li' data='"+ feedbackdata[i].address + "'>"+feedbackdata[i].name+"&nbsp;-&nbsp;"+feedbackdata[i].singer+"</li>");
@@ -155,7 +153,6 @@ $(document).ready(function(){
                         success:function(feedback)
                         {
                             $collectsongs = feedback;
-                            console.log(feedback);
                             $("#mycollectlist").find("li").remove();
                             for(var j=0;j<feedback.length;j++){
                                 $("#mycollectlist").append("<li class='collectlist-li' data='"+feedback[j].address+"'>"+feedback[j].name+"&nbsp;-&nbsp;"+feedback[j].singer+"</li>");
@@ -188,11 +185,9 @@ $(document).ready(function(){
       data:{},
       dataType:"json",
       success:function(feedbackdata){
-            console.log(feedbackdata);
             $("#rankinglist").find("li").remove();
             for(var i=0;i<feedbackdata.length;i++){
                 let address = feedbackdata[i].address;
-                console.log(address);
                 $("#rankinglist").append("<li class='rankinglist-li' data='"+address+"'>"+feedbackdata[i].name + "&nbsp;-&nbsp;"+feedbackdata[i].singer+"</li>");
             };
             $(".rankinglist-li").click(function(){
@@ -292,13 +287,11 @@ $(function(){
                   success:function(feedback)
                   {
                     $collectsongs = feedback;
-                    console.log(feedback);
                     $("#mycollectlist").find("li").remove();
                     for(var j=0;j<feedback.length;j++){
                         $("#mycollectlist").append("<li class='collectlist-li' data='"+feedback[j].address+"'>"+feedback[j].name+"&nbsp;-&nbsp;"+feedback[j].singer+"</li>");
                     };
                     $(".collectlist-li").click(function(){
-                        console.log("liclicked");
                          $('#alphaTab').alphaTab('load',$(this).attr("data"));
                          contains($(this).attr("data"));
                          $("#playPausepic").attr("src")=="pics/play.svg";
@@ -331,7 +324,6 @@ $(function(){
                         data: {username: $("#usernamereg").val(), password: $("#passwordreg").val()},
                         success: function (feedbackdata) {
                             $("#registerstatus").html(feedbackdata);
-                            console.log(feedbackdata);
                         },
                     })
                 } else {
@@ -448,4 +440,89 @@ $(document).keydown(function(e){
                  e.preventDefault()
              }
         }
+});
+
+$('.multiple_toggle').click(function(){
+    $('#uploadfileform').hide();
+    $('.multiple_toggle').hide();
+    $('#multiple_uploadfileform').show();
+    $('.single_toggle').show();
+});
+
+$('.single_toggle').click(function(){
+    $('#uploadfileform').show();
+    $('.single_toggle').hide();
+    $('#multiple_uploadfileform').hide();
+    $('.multiple_toggle').show();
+});
+
+$(".multiple_a-upload").on("change",function(){
+    let files = $('#multiple_uploadfile')[0].files;
+    for (let i = 0; i < files.length; i++) {
+        console.log(files[i]);
+        if(files[i].name.indexOf("gp4")!=-1 || files[i].name.indexOf("gp5")!=-1 || files[i].name.indexOf("gp3")!=-1){
+            $(".fileerrorTip").html("").hide();
+            $(".multiple_showFileName").text(files[0].name+'等'+files.length+'个乐谱');
+        }else{
+            $(".multiple_showFileName").html("");
+            bootoast({
+                message: '请上传后缀为.gp4或.gp5格式的乐谱文件',
+                type: 'danger',
+                position:'top-center',
+                timeout:1
+            });
+            return false
+        }
+    }
+
+})
+$("#multiple_upload-newtab-button").click(function(){
+    if($("#multiple_uploadfile").val()){
+        var files = $('#multiple_uploadfile')[0].files;
+        for(let i = 0; i < files.length; i++) {
+            if(files[i].name.indexOf("gp4")!=-1 || files[i].name.indexOf("gp5")!=-1 || files[i].name.indexOf("gp3")!=-1) {
+                let data = new FormData();
+                let fileobj = $('#multiple_uploadfile')[0].files[i];
+                console.log(fileobj);
+                let singer = fileobj.name.split('-')[0];
+                let song = fileobj.name.split('-')[1].split('.')[0];
+                console.log(singer, song);
+                data.append("name", song);
+                data.append("singer", singer);
+                data.append("file", fileobj);
+                console.log(data)
+                $.ajax({
+                    url: 'php/upload.php',
+                    type: 'POST',
+                    data: data,
+                    dataType: 'text',
+                    cache: false,
+                    processData: false,
+                    contentType: false,
+                    success: function (feedbackdata) {
+                        bootoast({
+                            message: '上传成功',
+                            type: 'info',
+                            position: 'top-center',
+                            timeout: 1
+                        });
+                    }
+                })
+            }else{
+                bootoast({
+                    message:'请按要求上传指定格式的乐谱',
+                    type: 'danger',
+                    position:'top-center',
+                    timeout:1
+                });
+            }
+        }
+    }else{
+        bootoast({
+            message:'请按要求上传指定格式的乐谱',
+            type: 'danger',
+            position:'top-center',
+            timeout:1
+        });
+    }
 });
