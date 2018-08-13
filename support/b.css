@@ -486,10 +486,11 @@ text{
 }
 #upload-newtab-button{
 	width:100px;
-	height:35px;
+	height:30px;
 	border-radius: 3px;
 	outline:0;
 	cursor: pointer;
+    font-size:12px;
 }
 #registerbutton{
 	color:#1274df;
@@ -620,8 +621,9 @@ text{
 
 #multiple_upload-newtab-button {
     width: 100px;
-    height: 35px;
+    height: 30px;
     border-radius: 3px;
     outline: 0;
     cursor: pointer;
+    font-size:12px;
 }
