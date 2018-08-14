@@ -1,15 +1,15 @@
 <?php
 header("charset=utf-8");
 
-$name = $_POST['name'];
-$singer = $_POST['singer'];
+$name = addslashes($_POST['name']);
+$singer = addslashes($_POST['singer']);
 
 
 $upload_path = "/var/www/html/uploads/";
 $dest_file = $upload_path.basename($_FILES['file']['name']);
 
 $songname = $_FILES['file']['name'];
-$songaddress = "uploads/".$songname;
+$songaddress = "uploads/".addslashes($songname);
 
 move_uploaded_file($_FILES['file']['tmp_name'],$dest_file);
 //将乐谱信息插入数据库中
@@ -43,8 +43,8 @@ else //不存在当前注册名称
 		 echo "上传曲谱成功！"; 
 		 } 
 	 else 
-		 { 
-		 echo "错误：上传失败，请稍候再试"; 
+		 {
+		 echo "错误：上传失败，请稍候再试";
 		 } 
 }
 $conn->close();

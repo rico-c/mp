@@ -484,8 +484,8 @@ $("#multiple_upload-newtab-button").click(function(){
                 let data = new FormData();
                 let fileobj = $('#multiple_uploadfile')[0].files[i];
                 console.log(fileobj);
-                let singer = fileobj.name.split('-')[0];
-                let song = fileobj.name.split('-')[1].split('.')[0];
+                let singer = fileobj.name.split('-')[0].replace("'","");
+                let song = fileobj.name.split('-')[1].split('.')[0].replace("'","");
                 console.log(singer, song);
                 data.append("name", song);
                 data.append("singer", singer);
@@ -501,7 +501,7 @@ $("#multiple_upload-newtab-button").click(function(){
                     contentType: false,
                     success: function (feedbackdata) {
                         bootoast({
-                            message: '上传成功',
+                            message: feedbackdata,
                             type: 'info',
                             position: 'top-center',
                             timeout: 1
