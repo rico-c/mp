@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" readonly="true" id="60df1093-4194-41f7-8acd-b4e423c7f069" name="默认" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Build/JavaScript/mipu.js" beforeDir="false" afterPath="$PROJECT_DIR$/Build/JavaScript/mipu.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Build/JavaScript/tabjs.js" beforeDir="false" afterPath="$PROJECT_DIR$/Build/JavaScript/tabjs.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/support/b.css" beforeDir="false" afterPath="$PROJECT_DIR$/support/b.css" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -17,7 +18,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="616">
@@ -35,11 +36,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="b.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="b.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/support/b.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="11932">
-              <caret line="628" column="1" selection-start-line="628" selection-start-column="1" selection-end-line="628" selection-end-column="1" />
+            <state relative-caret-position="425">
+              <caret line="313" column="1" lean-forward="true" selection-start-line="313" selection-start-column="1" selection-end-line="313" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -47,8 +48,49 @@
       <file leaf-file-name="mipu.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Build/JavaScript/mipu.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="9576">
-              <caret line="504" column="40" selection-start-line="504" selection-start-column="40" selection-end-line="504" selection-end-column="40" />
+            <state relative-caret-position="-1975">
+              <caret line="296" column="103" selection-start-line="296" selection-start-column="103" selection-end-line="296" selection-end-column="103" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="jquery.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Build/JavaScript/jquery.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="114">
+              <caret line="1" column="934" selection-start-line="1" selection-start-column="934" selection-end-line="1" selection-end-column="934" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="jquery.alphaTab.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Build/JavaScript/jquery.alphaTab.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="47">
+              <caret line="4" column="22" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="cloud.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Build/JavaScript/cloud.js">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="alphaTab.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Build/JavaScript/alphaTab.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="16968">
+              <caret line="1567" selection-start-line="1567" selection-end-line="1567" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tabjs.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Build/JavaScript/tabjs.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="209">
+              <caret line="11" column="36" lean-forward="true" selection-start-line="11" selection-start-column="36" selection-end-line="11" selection-end-column="36" />
             </state>
           </provider>
         </entry>
@@ -83,6 +125,7 @@
       <find>showFileName</find>
       <find>#upload-newtab-button</find>
       <find>multiple_upload-newtab-button</find>
+      <find>search</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -97,12 +140,12 @@
         <option value="$PROJECT_DIR$/Build/JavaScript/alphaTab.js" />
         <option value="$PROJECT_DIR$/lib/alphaSynth/AlphaSynth.js" />
         <option value="$PROJECT_DIR$/support/index.html" />
-        <option value="$PROJECT_DIR$/Build/JavaScript/tabjs.js" />
-        <option value="$PROJECT_DIR$/support/b.css" />
         <option value="$PROJECT_DIR$/php/ranking.php" />
-        <option value="$PROJECT_DIR$/Build/JavaScript/mipu.js" />
         <option value="$PROJECT_DIR$/php/upload.php" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/Build/JavaScript/tabjs.js" />
+        <option value="$PROJECT_DIR$/Build/JavaScript/mipu.js" />
+        <option value="$PROJECT_DIR$/support/b.css" />
       </list>
     </option>
   </component>
@@ -115,7 +158,7 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" fullScreen="true">
     <option name="y" value="23" />
     <option name="width" value="1680" />
     <option name="height" value="939" />
@@ -221,22 +264,25 @@
       <workItem from="1534768759126" duration="5000" />
       <workItem from="1534814040069" duration="5000" />
       <workItem from="1534814050299" duration="4000" />
+      <workItem from="1534864624522" duration="2526000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37698000" />
+    <option name="totallyTimeSpent" value="40224000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1680" height="939" extended-state="0" />
+    <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17440476" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17440476" />
       <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="调试" order="11" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="File Transfer" order="12" visible="true" weight="0.06543075" />
+      <window_info anchor="bottom" id="File Transfer" order="12" visible="true" weight="0.057142857" />
       <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Run" order="2" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="10" />
       <window_info id="Favorites" order="2" side_tool="true" />
@@ -244,11 +290,9 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="调试" order="11" />
       <window_info anchor="bottom" id="Find" order="1" />
     </layout>
   </component>
@@ -417,20 +461,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Build/JavaScript/jquery.alphaTab.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="47">
-          <caret line="4" column="22" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Build/JavaScript/jquery.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="142">
-          <caret line="1" column="934" selection-start-line="1" selection-start-column="934" selection-end-line="1" selection-end-column="934" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pics/logo.svg">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -461,36 +491,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Build/JavaScript/alphaTab.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="1567" selection-start-line="1567" selection-end-line="1567" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Build/JavaScript/cloud.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/support/index.html" />
     <entry file="file://$PROJECT_DIR$/favicon.ico">
       <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/webscan_360_cn.html">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Build/JavaScript/tabjs.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3021">
-          <caret line="159" column="43" selection-start-line="159" selection-start-column="43" selection-end-line="159" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/support/b.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="11932">
-          <caret line="628" column="1" selection-start-line="628" selection-start-column="1" selection-end-line="628" selection-end-column="1" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/php/login.php">
       <provider selected="true" editor-type-id="text-editor" />
@@ -502,13 +508,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="494">
           <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Build/JavaScript/mipu.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="9576">
-          <caret line="504" column="40" selection-start-line="504" selection-start-column="40" selection-end-line="504" selection-end-column="40" />
         </state>
       </provider>
     </entry>
@@ -526,6 +525,51 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="616">
           <caret line="212" column="47" selection-start-line="212" selection-start-column="47" selection-end-line="212" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Build/JavaScript/tabjs.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" column="36" lean-forward="true" selection-start-line="11" selection-start-column="36" selection-end-line="11" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Build/JavaScript/jquery.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="1" column="934" selection-start-line="1" selection-start-column="934" selection-end-line="1" selection-end-column="934" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Build/JavaScript/jquery.alphaTab.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="47">
+          <caret line="4" column="22" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Build/JavaScript/cloud.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Build/JavaScript/alphaTab.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="16968">
+          <caret line="1567" selection-start-line="1567" selection-end-line="1567" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Build/JavaScript/mipu.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1975">
+          <caret line="296" column="103" selection-start-line="296" selection-start-column="103" selection-end-line="296" selection-end-column="103" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/support/b.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="313" column="1" lean-forward="true" selection-start-line="313" selection-start-column="1" selection-end-line="313" selection-end-column="1" />
         </state>
       </provider>
     </entry>

@@ -309,6 +309,8 @@ a{
 	width:20%;
 	margin:10px auto 0 auto;
 	transform: translateX(-5%);
+    overflow: scroll;
+    height: calc(100% - 270px);
 }
 .closebutton{
 	position:fixed;
