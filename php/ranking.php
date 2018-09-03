@@ -10,7 +10,7 @@
 		    die("Á¬½ÓÊ§°Ü: " . $conn->connect_error);
 		} 
 		
-		$sql = "SELECT * from tabs ORDER BY searchnum DESC limit 0,500";
+		$sql = "SELECT * from tabs ORDER BY searchnum DESC limit 0,200";
 		mysqli_query($conn,'set names utf8');
 		$result = $conn->query($sql);
 		$num_results = $result->num_rows;

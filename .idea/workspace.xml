@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" readonly="true" id="60df1093-4194-41f7-8acd-b4e423c7f069" name="默认" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/ranking.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/ranking.php" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -20,8 +20,17 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="661">
-              <caret line="212" column="48" selection-start-line="212" selection-start-column="48" selection-end-line="212" selection-end-column="48" />
+            <state relative-caret-position="235">
+              <caret line="106" column="22" selection-start-line="106" selection-start-column="22" selection-end-line="106" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ranking.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/php/ranking.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="551">
+              <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
             </state>
           </provider>
         </entry>
@@ -86,15 +95,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="tabjs.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Build/JavaScript/tabjs.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="11" column="36" selection-start-line="11" selection-start-column="36" selection-end-line="11" selection-end-column="36" />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FindInProjectRecents">
@@ -135,11 +135,11 @@
         <option value="$PROJECT_DIR$/Build/JavaScript/alphaTab.js" />
         <option value="$PROJECT_DIR$/lib/alphaSynth/AlphaSynth.js" />
         <option value="$PROJECT_DIR$/support/index.html" />
-        <option value="$PROJECT_DIR$/php/ranking.php" />
         <option value="$PROJECT_DIR$/php/upload.php" />
         <option value="$PROJECT_DIR$/Build/JavaScript/tabjs.js" />
         <option value="$PROJECT_DIR$/Build/JavaScript/mipu.js" />
         <option value="$PROJECT_DIR$/support/b.css" />
+        <option value="$PROJECT_DIR$/php/ranking.php" />
         <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
@@ -173,6 +173,11 @@
             <path>
               <item name="html" type="b2602c69:ProjectViewProjectNode" />
               <item name="html" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="html" type="b2602c69:ProjectViewProjectNode" />
+              <item name="html" type="462c0819:PsiDirectoryNode" />
+              <item name="php" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="html" type="b2602c69:ProjectViewProjectNode" />
@@ -251,11 +256,12 @@
       <workItem from="1535815756736" duration="12000" />
       <workItem from="1535819369096" duration="198000" />
       <workItem from="1535937383512" duration="13000" />
+      <workItem from="1535983294736" duration="38000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="40808000" />
+    <option name="totallyTimeSpent" value="40846000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
@@ -271,6 +277,7 @@
       <window_info anchor="bottom" id="Terminal" order="10" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="调试" order="11" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -278,7 +285,6 @@
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="调试" order="11" />
       <window_info anchor="bottom" id="Find" order="1" />
     </layout>
   </component>
@@ -480,13 +486,6 @@
     <entry file="file://$PROJECT_DIR$/php/login.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/php/ranking.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
-          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/php/search.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -548,10 +547,17 @@
     <entry file="file://$PROJECT_DIR$/pics/2.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/php/ranking.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="551">
+          <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="661">
-          <caret line="212" column="48" selection-start-line="212" selection-start-column="48" selection-end-line="212" selection-end-column="48" />
+        <state relative-caret-position="235">
+          <caret line="106" column="22" selection-start-line="106" selection-start-column="22" selection-end-line="106" selection-end-column="22" />
         </state>
       </provider>
     </entry>
