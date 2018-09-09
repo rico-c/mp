@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" readonly="true" id="60df1093-4194-41f7-8acd-b4e423c7f069" name="默认" comment="">
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/ranking.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/ranking.php" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -20,8 +19,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="235">
-              <caret line="106" column="22" selection-start-line="106" selection-start-column="22" selection-end-line="106" selection-end-column="22" />
+            <state relative-caret-position="433">
+              <caret line="200" column="20" lean-forward="true" selection-start-line="200" selection-start-column="20" selection-end-line="200" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -30,7 +29,7 @@
         <entry file="file://$PROJECT_DIR$/php/ranking.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="551">
-              <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
+              <caret line="29" selection-start-line="29" selection-end-line="29" />
             </state>
           </provider>
         </entry>
@@ -257,11 +256,12 @@
       <workItem from="1535819369096" duration="198000" />
       <workItem from="1535937383512" duration="13000" />
       <workItem from="1535983294736" duration="38000" />
+      <workItem from="1536504509447" duration="11000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="40846000" />
+    <option name="totallyTimeSpent" value="40857000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
@@ -550,14 +550,14 @@
     <entry file="file://$PROJECT_DIR$/php/ranking.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="551">
-          <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
+          <caret line="29" selection-start-line="29" selection-end-line="29" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="235">
-          <caret line="106" column="22" selection-start-line="106" selection-start-column="22" selection-end-line="106" selection-end-column="22" />
+        <state relative-caret-position="433">
+          <caret line="200" column="20" lean-forward="true" selection-start-line="200" selection-start-column="20" selection-end-line="200" selection-end-column="20" />
         </state>
       </provider>
     </entry>
