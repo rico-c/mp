@@ -4,7 +4,7 @@
 <h1 align="center">米谱网</h1>
   
 ### 网址
-https://www.mptab.com
+https://www.mptab.cn
 
 ### 介绍
 因为大学时期的乐队经历，发现我们在学习新曲子时乐谱的实时滚动查阅，定点播放，慢速播放和在线播放非常重要。
