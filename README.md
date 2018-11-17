@@ -1,5 +1,8 @@
 <h1 align="center">米谱网</h1>
-
+<p align="center">
+  <img width="100px" align="center" src="http://www.ricofishing.com/img/neatmusicicon.png">
+  </p>
+  
 ### 网址
 https://www.mptab.com
 
