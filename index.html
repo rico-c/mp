@@ -1,226 +1,426 @@
 <!DOCTYPE html>
 <html lang="zh-cmn">
-<head>
-    <title>米谱网 - 专业吉他谱搜索引擎,在线吉他谱播谱平台,吉他入门学习谱库</title>
-    <meta charset="utf-8">
-    <meta name="keywords" content="吉他谱,吉他,GTP,乐谱,吉他谱下载,吉他谱播放,吉他入门,吉他基础"/>
-    <meta name="description" content="米谱网是专业的在线吉他谱播谱平台。米谱网提供了丰富的吉他谱、乐队总谱等乐谱资源，并提供在线搜索、排行榜并支持在线播放吉他谱、乐谱等功能，是吉他爱好者入门、学习、练习的最佳体验平台。" />
+  <head>
+    <title>
+      MiSpectrum - Guitar sheet music search engine, online guitar sheet music
+      broadcasting platform, guitar introductory learning score library
+    </title>
+    <meta charset="utf-8" />
+    <meta
+      name="keywords"
+      content="吉他谱,吉他,GTP,乐谱,吉他谱下载,吉他谱播放,吉他入门,吉他基础"
+    />
+    <meta
+      name="description"
+      content="Guitar sheet music search engine, online guitar sheet music broadcasting platform, guitar introductory learning score library"
+    />
     <meta name="baidu-site-verification" content="vgRXzQ4SEG" />
-    <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico" />
     <script type="text/javascript" src="Build/JavaScript/alphaTab.js"></script>
     <script type="text/javascript" src="Build/JavaScript/jquery.js"></script>
-    <script type="text/javascript" src="Build/JavaScript/jquery.alphaTab.js"></script>
+    <script
+      type="text/javascript"
+      src="Build/JavaScript/jquery.alphaTab.js"
+    ></script>
     <script type="text/javascript" src="lib/swfobject/swfobject.js"></script>
     <script type="text/javascript" src="lib/alphaSynth/AlphaSynth.js"></script>
-    <script type="text/javascript" src="Build/JavaScript/jquery.alphaTab.alphaSynth.js"></script>  
-    <script type="text/javascript" src="Build/JavaScript/cloud.js"></script>  
+    <script
+      type="text/javascript"
+      src="Build/JavaScript/jquery.alphaTab.alphaSynth.js"
+    ></script>
+    <script type="text/javascript" src="Build/JavaScript/cloud.js"></script>
     <link rel="stylesheet" href="support/b.css" />
     <link rel="stylesheet" href="support/cloud.css" />
-    <link rel="stylesheet" href="support/bootstrape.css" >
+    <link rel="stylesheet" href="support/bootstrape.css" />
     <script>
-        var _hmt = _hmt || [];
-        (function() {
-            var hm = document.createElement("script");
-            hm.src = "https://hm.baidu.com/hm.js?b8bd631a37e0e3cf6fb21ff2a0fda8ef";
-            var s = document.getElementsByTagName("script")[0];
-            s.parentNode.insertBefore(hm, s);
-        })();
+      var _hmt = _hmt || [];
+      (function () {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?b8bd631a37e0e3cf6fb21ff2a0fda8ef";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+      })();
     </script>
-</head>
-<body>
-	<div id="picback"><img src="pics/2.jpg"></div>
-	<div id="leftbar">
-		<div class="leftbar-logo"><img src="pics/logo.svg" id="logopic"><img src="pics/mipu.png" id="logomipu"></div>
-		<div id="leftbar-container">
-			<a href="##"><div class="leftbar-unit" id="leftbar-search"><img src="pics/search.svg"><p>搜索</p></div></a>
-			<a href="##"><div class="leftbar-unit" id="leftbar-ranking"><img src="pics/ranking.svg"><p>热榜</p></div></a>
-			<a href="##"><div class="leftbar-unit" id="leftbar-collect"><img src="pics/collect.svg"><p>收藏</p></div></a>
-			<a href="##"><div class="leftbar-unit" id="leftbar-upload"><img src="pics/up.svg"><p>传谱</p></div></a>
-			<a href="##"><div class="leftbar-unit" id="leftbar-login"><img src="pics/signin.svg"><p>登录</p></div></a>
-		</div>
-	</div>
-	<div id="rightbar">
-            <div id="soundFontProgressMenuItem">
-                <p class="navbar-text">加载音色库</p>
-                <div class="progress">
-                    <div class="progress-bar" id="soundFontProgress" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 0%;">
-                        0%
-                    </div>
-                </div>
-            </div>
-			<a href="##"><div class="rightbar-unit">
-				<div class="piccontainer" id="playPause" class="btn btn-link navbar-btn glyphicon glyphicon-play">
-				<img src="pics/loading.gif"  id="playPausepic" disabled="disabled" class="rightbarbutton">
-				</div>
-			</div></a>
-			<a href="##"><div class="rightbar-unit">
-				<div class="piccontainer" id="stop" class="btn btn-link navbar-btn glyphicon glyphicon-stop">
-				<img src="pics/stop.svg" id="stopbutton" disabled="disabled" class=" rightbarbutton">
-				</div>
-			</div></a>		
-			<div class="dropdown">
-                <a href="##" class="dropdown-toggle2" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" id="currentTrack">
-                <div class="rightbar-unit">
-                	<div class="piccontainer"><img src="pics/instrument.svg" class="rightbarbutton"></div>
-                </div>
-                </a>
-                <ul class="dropdown-menu2" id="trackList">
-                </ul>
-            </div>     			
-			<div class="dropdown">
-              <a href="##" class="dropdown-toggle1" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><div class="rightbar-unit">
-              	<div class="piccontainer"><img src="pics/speed.svg" class="rightbarbutton"></div>
-              </div></a>
-              <ul class="dropdown-menu1" id="playbackSpeedSelector">
-                <li><a href="##" data-value="0.25">25%</a></li>
-                <li><a href="##" data-value="0.5">50%</a></li>
-                <li><a href="##" data-value="0.6">60%</a></li>
-                <li><a href="##" data-value="0.7">70%</a></li>
-                <li><a href="##" data-value="0.8">80%</a></li>
-                <li><a href="##" data-value="0.9">90%</a></li>
-                <li><a href="##" data-value="1">100%</a></li>
-                <li><a href="##" data-value="1.1">110%</a></li>
-                <li><a href="##" data-value="1.25">125%</a></li>
-                <li><a href="##" data-value="1.5">150%</a></li>
-                <li><a href="##" data-value="2">200%</a></li>
-              </ul>
-            </div>
-	</div>
-	<div id="float-search" class="floatarea">
- 		<div id="searchlogo"><img src="pics/logo.svg"><p>米谱 - 搜谱</p>
- 		</div>
-    	<input type="text" id="ricotext" name="search" class="form-control" placeholder="请输入乐谱名、歌手名" aria-describedby="basic-addon1" autocomplete="off"/>
-    	<ul id="searchresult"></ul>
-    	<a href="##">
-    	<div class="closebutton"><img src="pics/close.svg"></div>
-    	</a>
+  </head>
+  <body>
+    <div id="picback"><img src="pics/2.jpg" /></div>
+    <div id="leftbar">
+      <div class="leftbar-logo">
+        <img src="pics/logo.svg" id="logopic" /><img
+          src="pics/mipu.png"
+          id="logomipu"
+        />
+      </div>
+      <div id="leftbar-container">
+        <a href="##"
+          ><div class="leftbar-unit" id="leftbar-search">
+            <img src="pics/search.svg" />
+            <p>Search</p>
+          </div></a
+        >
+        <a href="##"
+          ><div class="leftbar-unit" id="leftbar-ranking">
+            <img src="pics/ranking.svg" />
+            <p>Rank</p>
+          </div></a
+        >
+        <a href="##"
+          ><div class="leftbar-unit" id="leftbar-collect">
+            <img src="pics/collect.svg" />
+            <p>Collect</p>
+          </div></a
+        >
+        <a href="##"
+          ><div class="leftbar-unit" id="leftbar-upload">
+            <img src="pics/up.svg" />
+            <p>Upload</p>
+          </div></a
+        >
+        <a href="##"
+          ><div class="leftbar-unit" id="leftbar-login">
+            <img src="pics/signin.svg" />
+            <p>Login</p>
+          </div></a
+        >
+      </div>
     </div>
-    <div id="float-ranking" class="floatarea">	
-    	<div class="listarea">
-    		<div id="ranklogo"><img src="pics/ranklogo.svg"><h2>排行榜 - TOP200</h2></div>
-    		<ol id="rankinglist"></ol>	
-    	</div>
-    	<a href="##">
-    	<div class="closebutton"><img src="pics/close.svg"></div>
-    	</a>
+    <div id="rightbar">
+      <div id="soundFontProgressMenuItem">
+        <p class="navbar-text">Loading</p>
+        <div class="progress">
+          <div
+            class="progress-bar"
+            id="soundFontProgress"
+            role="progressbar"
+            aria-valuenow="60"
+            aria-valuemin="0"
+            aria-valuemax="100"
+            style="width: 0%"
+          >
+            0%
+          </div>
+        </div>
+      </div>
+      <a href="##"
+        ><div class="rightbar-unit">
+          <div
+            class="piccontainer"
+            id="playPause"
+            class="btn btn-link navbar-btn glyphicon glyphicon-play"
+          >
+            <img
+              src="pics/loading.gif"
+              id="playPausepic"
+              disabled="disabled"
+              class="rightbarbutton"
+            />
+          </div></div
+      ></a>
+      <a href="##"
+        ><div class="rightbar-unit">
+          <div
+            class="piccontainer"
+            id="stop"
+            class="btn btn-link navbar-btn glyphicon glyphicon-stop"
+          >
+            <img
+              src="pics/stop.svg"
+              id="stopbutton"
+              disabled="disabled"
+              class="rightbarbutton"
+            />
+          </div></div
+      ></a>
+      <div class="dropdown">
+        <a
+          href="##"
+          class="dropdown-toggle2"
+          data-toggle="dropdown"
+          role="button"
+          aria-haspopup="true"
+          aria-expanded="false"
+          id="currentTrack"
+        >
+          <div class="rightbar-unit">
+            <div class="piccontainer">
+              <img src="pics/instrument.svg" class="rightbarbutton" />
+            </div>
+          </div>
+        </a>
+        <ul class="dropdown-menu2" id="trackList"></ul>
+      </div>
+      <div class="dropdown">
+        <a
+          href="##"
+          class="dropdown-toggle1"
+          data-toggle="dropdown"
+          role="button"
+          aria-haspopup="true"
+          aria-expanded="false"
+          ><div class="rightbar-unit">
+            <div class="piccontainer">
+              <img src="pics/speed.svg" class="rightbarbutton" />
+            </div></div
+        ></a>
+        <ul class="dropdown-menu1" id="playbackSpeedSelector">
+          <li><a href="##" data-value="0.25">25%</a></li>
+          <li><a href="##" data-value="0.5">50%</a></li>
+          <li><a href="##" data-value="0.6">60%</a></li>
+          <li><a href="##" data-value="0.7">70%</a></li>
+          <li><a href="##" data-value="0.8">80%</a></li>
+          <li><a href="##" data-value="0.9">90%</a></li>
+          <li><a href="##" data-value="1">100%</a></li>
+          <li><a href="##" data-value="1.1">110%</a></li>
+          <li><a href="##" data-value="1.25">125%</a></li>
+          <li><a href="##" data-value="1.5">150%</a></li>
+          <li><a href="##" data-value="2">200%</a></li>
+        </ul>
+      </div>
+    </div>
+    <div id="float-search" class="floatarea">
+      <div id="searchlogo">
+        <img src="pics/logo.svg" />
+        <p>MiSpectrum - Search</p>
+      </div>
+      <input
+        type="text"
+        id="ricotext"
+        name="search"
+        class="form-control"
+        placeholder="Please input singer or song name"
+        aria-describedby="basic-addon1"
+        autocomplete="off"
+      />
+      <ul id="searchresult"></ul>
+      <a href="##">
+        <div class="closebutton"><img src="pics/close.svg" /></div>
+      </a>
+    </div>
+    <div id="float-ranking" class="floatarea">
+      <div class="listarea">
+        <div id="ranklogo">
+          <img src="pics/ranklogo.svg" />
+          <h2>RankList - TOP200</h2>
+        </div>
+        <ol id="rankinglist"></ol>
+      </div>
+      <a href="##">
+        <div class="closebutton"><img src="pics/close.svg" /></div>
+      </a>
     </div>
     <div id="float-collect" class="floatarea">
-    	<div id="collectlogo">
-			<img src="pics/collectlogo.svg">
-			<h2>我的收藏</h2>
-    	</div>
-		<ul id ="mycollectlist"><li>暂无收藏乐谱</li></ul>
-		<a href="##"><div class="closebutton"><img src="pics/close.svg"></div></a>
+      <div id="collectlogo">
+        <img src="pics/collectlogo.svg" />
+        <h2>My Collection</h2>
+      </div>
+      <ul id="mycollectlist">
+        <li>None</li>
+      </ul>
+      <a href="##"
+        ><div class="closebutton"><img src="pics/close.svg" /></div
+      ></a>
     </div>
     <div id="float-upload" class="floatarea">
-    	<div id="uploadlogo"><img src="pics/uploadlogo.svg"><h2>上传曲谱</h2><h4></h4></div>
-    	<form name="uploadfile" id="uploadfileform">
-    		<p>有乐谱要和大家一起分享?</p>
-    		<p>填写信息同时选择乐谱文件并点击提交</p>
-			<input type="text" name="name" id="uploadname" class="uploadinfotext" placeholder="请输入曲名">
-			<span> - </span>
-			<input type="text" name="singer" id="uploadsinger" class="uploadinfotext" placeholder="请输入歌手">
-            <p></p>
-			<p>请选择.gp4/.gp5文件：</p>
-			<a href="##" class="a-upload">
-				<span>选择乐谱</span>
-				<input type="file" name="file" class="uploadbutton1" id="uploadfile">
-				<br/>
-			</a>
-			<div id="uploadwronginfo">
-				<p class="showFileName"></p>
-				<p class="fileerrorTip"></p>
-			</div>
-			<input type="button" name="提交" value="提交" id="upload-newtab-button"/>
-			<p id="uploadresulutinfo"></p>
-		</form>
-        <p class="multiple_toggle"><i>批量上传</i></p>
-        <!--批量上传-->
-        <form name="uploadfile" id="multiple_uploadfileform">
-            <p><b>批量上传</b></p>
-            <p>请按如下规则上传:</p>
-            <p>1.请务必上传.gp4/.gp5格式乐谱文件，其他格式不支持。</p>
-            <p>2.请将每个乐谱文件按照"歌手名-歌曲名.gp5(或.gp4)"格式命名,系统将自动记录歌手及歌曲名。例:gala-young for you.gp5</p>
-            <br/>
-            <p>请选择.gp4/.gp5文件：</p>
-            <a href="##" class="multiple_a-upload">
-                <span>选择乐谱</span>
-                <input type="file" name="file" multiple class="multiple_uploadbutton1" id="multiple_uploadfile">
-                <br/>
-            </a>
-            <div id="uploadwronginfo">
-                <p class="multiple_showFileName"></p>
-                <p class="multiple_fileerrorTip"></p>
-            </div>
-            <input type="button" name="提交" value="提交" id="multiple_upload-newtab-button"/>
-        </form>
-        <p class="single_toggle"><i>单谱上传</i></p>
-		<a href="##"><div class="closebutton"><img src="pics/close.svg"></div></a>
+      <div id="uploadlogo">
+        <img src="pics/uploadlogo.svg" />
+        <h2>Upload Spectrum</h2>
+        <h4></h4>
+      </div>
+      <form name="uploadfile" id="uploadfileform">
+        <p>Have a score to share?</p>
+        <p>Fill in the information and select the sheet music file and click submit.</p>
+        <input
+          type="text"
+          name="name"
+          id="uploadname"
+          class="uploadinfotext"
+          placeholder="Please enter the name of the song"
+        />
+        <span> - </span>
+        <input
+          type="text"
+          name="singer"
+          id="uploadsinger"
+          class="uploadinfotext"
+          placeholder="Please enter a singer"
+        />
+        <p></p>
+        <p>Please Select .gp4/.gp5 file:</p>
+        <a href="##" class="a-upload">
+          <span>Selecting a Score</span>
+          <input
+            type="file"
+            name="file"
+            class="uploadbutton1"
+            id="uploadfile"
+          />
+          <br />
+        </a>
+        <div id="uploadwronginfo">
+          <p class="showFileName"></p>
+          <p class="fileerrorTip"></p>
+        </div>
+        <input
+          type="button"
+          name="Submit"
+          value="Submit"
+          id="upload-newtab-button"
+        />
+        <p id="uploadresulutinfo"></p>
+      </form>
+      <p class="multiple_toggle"><i>Batch upload</i></p>
+      <!--批量上传-->
+      <form name="uploadfile" id="multiple_uploadfileform">
+        <p><b>Batch upload</b></p>
+        <p>请按如下规则上传:</p>
+        <p>1.请务必上传.gp4/.gp5格式乐谱文件，其他格式不支持。</p>
+        <p>
+          2.请将每个乐谱文件按照"歌手名-歌曲名.gp5(或.gp4)"格式命名,系统将自动记录歌手及歌曲名。例:gala-young
+          for you.gp5
+        </p>
+        <br />
+        <p>Please Select .gp4/.gp5 file:</p>
+        <a href="##" class="multiple_a-upload">
+          <span>Selecting a Score</span>
+          <input
+            type="file"
+            name="file"
+            multiple
+            class="multiple_uploadbutton1"
+            id="multiple_uploadfile"
+          />
+          <br />
+        </a>
+        <div id="uploadwronginfo">
+          <p class="multiple_showFileName"></p>
+          <p class="multiple_fileerrorTip"></p>
+        </div>
+        <input
+          type="button"
+          name="Submit"
+          value="Submit"
+          id="multiple_upload-newtab-button"
+        />
+      </form>
+      <p class="single_toggle"><i>Single Score Upload</i></p>
+      <a href="##"
+        ><div class="closebutton"><img src="pics/close.svg" /></div
+      ></a>
     </div>
     <div id="float-login" class="floatarea">
-    	<div id="loginform">
-    		<table>
-    			<tr>
-					<td>
-						用户名
-					</td>
-					<td>
-						<input type="text" name="usernamel" id="usernameinput" class="form-control">
-					</td>
-				</tr>
-				<tr>
-					<td>
-						密&nbsp;&nbsp;&nbsp;码
-					</td>
-					<td>
-						<input type="password" name="passwordl" id="passwordinput" class="form-control">
-					</td>
-				</tr>
-			</table>
-			<input type="submit" value="登录" id="loginbutton"><br/>
-			<a href="##" id="registerbutton">没有账号?去注册</a>
-			<p id="loginstatus" data="unloged"></p>
-		</div>
-		<a href="##"><div class="closebutton"><img src="pics/close.svg"></div></a>
+      <div id="loginform">
+        <table>
+          <tr>
+            <td>Username</td>
+            <td>
+              <input
+                type="text"
+                name="usernamel"
+                id="usernameinput"
+                class="form-control"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>Password</td>
+            <td>
+              <input
+                type="password"
+                name="passwordl"
+                id="passwordinput"
+                class="form-control"
+              />
+            </td>
+          </tr>
+        </table>
+        <input type="submit" value="登录" id="loginbutton" /><br />
+        <a href="##" id="registerbutton">Register</a>
+        <p id="loginstatus" data="unloged"></p>
+      </div>
+      <a href="##"
+        ><div class="closebutton"><img src="pics/close.svg" /></div
+      ></a>
     </div>
     <div id="float-register" class="floatarea">
-    	<div id="regform">
-	    	<table>
-	    		<tr>
-					<td>用户名</td>
-					<td><input type="text" name="usernamel" id="usernamereg" class="form-control"></td>
-				</tr>
-				<tr>
-					<td>密码</td>
-					<td><input type="password" name="passwordl" id="passwordreg" class="form-control"></td>
-				</tr>
-				<tr>
-					<td>确认密码</td>
-					<td><input type="password" name="password" id="passwordreg2" class="form-control"></td>
-				</tr>
-			</table>
-			<input type="submit" value="注册" id="regbutton">
-			<p id="registerstatus"></p>
-		</div>
-		<a href="##"><div class="closebutton"><img src="pics/close.svg"></div></a>
+      <div id="regform">
+        <table>
+          <tr>
+            <td>Username</td>
+            <td>
+              <input
+                type="text"
+                name="usernamel"
+                id="usernamereg"
+                class="form-control"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>Password</td>
+            <td>
+              <input
+                type="password"
+                name="passwordl"
+                id="passwordreg"
+                class="form-control"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>Confirm Password</td>
+            <td>
+              <input
+                type="password"
+                name="password"
+                id="passwordreg2"
+                class="form-control"
+              />
+            </td>
+          </tr>
+        </table>
+        <input type="submit" value="注册" id="regbutton" />
+        <p id="registerstatus"></p>
+      </div>
+      <a href="##"
+        ><div class="closebutton"><img src="pics/close.svg" /></div
+      ></a>
     </div>
-    <div id="alphaTab" data-file="uploads/youngforyou.gp5" 
-                       data-player="lib/alphaSynth/default.sf2"
-                       data-player-offset="[-10,-70]" data-staves="tab" data-staves-rhythm="true" data-layout-hide-tuning="true">
-        <div class="bottominfo" style="position: absolute;bottom:10px;left:50%;transform: translateX(-50%);">
-            <a href="http://www.miitbeian.gov.cn/" style="color:white;">©2018 Mipu 京ICP备18027318号</a>
-            <br/>
-            <span>Copyright ©2017-2018 mptab.cn 版权所有</span>
-            <br/>
-            <span>本站为非营利性站点，所有吉他谱均来自用户上传</span>
-            <br/>
-            <span>联系我们:service@mptab.cn</span>
-        </div>
+    <div
+      id="alphaTab"
+      data-file="uploads/youngforyou.gp5"
+      data-player="lib/alphaSynth/default.sf2"
+      data-player-offset="[-10,-70]"
+      data-staves="tab"
+      data-staves-rhythm="true"
+      data-layout-hide-tuning="true"
+    >
+      <div
+        class="bottominfo"
+        style="
+          position: absolute;
+          bottom: 10px;
+          left: 50%;
+          transform: translateX(-50%);
+        "
+      >
+        <a href="http://www.miitbeian.gov.cn/" style="color: white"
+          >©2018 Mipu 京ICP备18027318号</a
+        >
+        <br />
+        <span>Copyright ©2017-2018 mptab.cn 版权所有</span>
+        <br />
+        <span>本站为非营利性站点，所有吉他谱均来自用户上传</span>
+        <br />
+        <span>Contact:service@mptab.cn</span>
+      </div>
     </div>
-    <a href="##" id="star"><div id="collectbutton"><img src="pics/collect.png" id="collectpic"></div></a>
-    <script type="text/javascript" src="Build/JavaScript/mipu.js"></script>  
+    <a href="##" id="star"
+      ><div id="collectbutton">
+        <img src="pics/collect.png" id="collectpic" /></div
+    ></a>
+    <script type="text/javascript" src="Build/JavaScript/mipu.js"></script>
     <script type="text/javascript" src="Build/JavaScript/tabjs.js"></script>
 
     <script src="https://cdn.bootcss.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
-</body>
-</html>     
+  </body>
+</html>

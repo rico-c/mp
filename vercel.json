@@ -1,0 +1,5 @@
+{
+  "functions": {
+    "php/*": "vercel-php@0.1.0"
+  }
+}
